@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter+Tight&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #1f232b;
+        }
+
+        .form {
+            background-color: #161b22;
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            height: 500px;
+            width: 400px;
+            border-radius: 20px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+
+        .image-panel {
+            text-align: center;
+        }
+
+        .image {
+            
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            border: 1px solid #1f232b80;
+            margin-top: 30px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+
+        .name-info {
+            text-align: left;
+            position: relative;
+            width: 320px;
+            margin-top: 15px;
+        }
+
+        .name {
+            position: absolute;
+            left: 100px;
+            color: #8b949e;
+            font-size: 22px;
+            font-family: 'Inter Tight', sans-serif;
+        }
+
+        .nickname {
+            position: absolute;
+            left: 100px;
+            top: 26px;
+            color: #8b949e;
+            font-size: 18px;
+            font-family: 'Inter Tight', sans-serif;
+        }
+
+        .info {
+            position: absolute;
+            top: 60px;
+            left: 100px;
+            color: #8b949e;
+            font-size: 14px;
+            font-family: 'Inter Tight', sans-serif;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        a{
+            text-decoration: none;
+        }
+        .linkbar {
+            position: absolute;
+
+            width: 100%;
+            height: auto;
+            display: flex;
+            gap: 25px;
+            justify-content: center;
+            top: 83%;
+        }
+
+
+        #twitter,
+        #github,
+        #youtube,
+        #linkedin{
+            font-size: 2.5em;
+            color: #fff;
+            box-shadow: 2px 2px 2px #00000080, 10px 1px 12px #00000080, 2px 2px 10px #00000080,
+            inset 2px 2px 10px #00000080, inset 2px 2px 10px #00000080, inset 2px 2px 10px #00000080;
+            border-radius: 29px;
+            padding: 11px 15px;
+            
+            animation: animate 3s linear infinite;
+            text-shadow:  0 0 50px #0072ff, 0 0 100px #0072ff, 0 0 150px #0072ff, 0 0 200px #0072ff;
+        }
+
+        #twitter{
+            animation-delay: 0.3s;
+        }
+        #github{
+            animation-delay: 0.7s;
+        }
+        #youtube{
+            animation-delay: 0.1s;
+        }
+        #linkedin{
+            animation-delay: 0.1s;
+        }
+        @keyframes animate{
+            to{
+                filter: hue-rotate(0deg);
+            }
+            to{
+                filter: hue-rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form">
+
+        <div class="image-info">
+            <div class="image-panel">
+                <img class="image"
+                    src="https://avatars.githubusercontent.com/u/114503053?s=400&amp;u=af777b735e4d84bc836e76153743cbafcd5be528&amp;v=4"
+                    width="200" height="200" alt="@isiksalihh">
+            </div>
+            <div class="name-info" id="form">
+                <ul>
+                    <li class="name text"><b>Salih Işık</b></li>
+                    <li class="nickname text">isiksalihh</li>
+                    <li class="info text">electrical-electronic engineer student, try'n to be web developer</li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="linkbar">
+
+
+            <a href="https://twitter.com/isiksalihh" class="fa-brands fa-twitter fa-2x" id="twitter"></a>
+            <a href="https://www.linkedin.com/in/isiksalihh/" class="fa-brands fa-linkedin-in fa-2x" id="linkedin"></a>
+            <a href="https://github.com/isiksalihh" class="fa-brands fa-github fa-2x" id="github"></a>
+            <a class="fa-brands fa-youtube fa-2x" id="youtube"></a>
+
+
+
+        </div>
+    </div>
+</body>
+
+</html>
